@@ -1,0 +1,74 @@
+<!-- Author: Kemar Mullings
+ID#:2306288
+Day/Time of Class: Wednesday 8am
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Settings - My Portfolio</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html">Professional</a></li>
+            <li><a href="personality.html">Personality</a></li>
+            <li><a href="personal_development.html">Personal Development</a></li>
+            <li><a href="storyboard.html">Storyboard</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Settings</h1>
+        <p>Personalize how the site looks and reads. Changes save automatically.</p>
+    </header>
+
+    <section class="settings-page">
+        <div class="settings-grid">
+            <div class="settings-card">
+                <h2>Appearance</h2>
+                <p class="setting-meta">Switch between light and dark modes.</p>
+                <div class="setting-row">
+                    <div>
+                        <h3>Dark mode</h3>
+                        <p class="setting-meta">Better for low light environments.</p>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h2>Text size</h2>
+                <p class="setting-meta">Adjust font size for comfortable reading.</p>
+                <select id="font-size" class="select-control">
+                    <option value="normal">Normal</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+
+            <div class="settings-card">
+                <h2>Preview</h2>
+                <p class="setting-meta">See how your choices look around the site.</p>
+                <div class="preview-box" id="settings-preview">Current: light theme, normal text</div>
+                <button class="button" id="settings-reset">Reset to defaults</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 by Kemar M. Mullings. All Rights Reserved.
+    </footer>
+
+    <script src="settings.js"></script>
+</body>
+</html>
